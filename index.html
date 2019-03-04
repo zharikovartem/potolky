@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="background-color: aqua;" class="razdel">
+        <input type="button" onclick="next();"/>
+        test1
+    </div>
+    <div class="razdel">
+        <input type="button" onclick="next();"/>
+        test
+    </div>
+    <div class="razdel">
+        test
+        <input type="button" onclick="next();"/>
+    </div>
+</body>
+<script>
+    function next() {
+        var here = window.pageYOffset+900;
+        window.scrollBy(0,here);
+        //alert(document.documentElement.clientHeight);
+    }
+</script>
