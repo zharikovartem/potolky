@@ -5,23 +5,52 @@
 </head>
 
 <body>
+    <div class="menu" id="menu" hidden>
+        <div class="menu_scroll">
+            <a class="menu-href" href="#">
+                <p>Рассчитать стоимость</p>
+            </a>
+            <a class="menu-href" href="#">
+                <p>Примеры работ</p>
+            </a>
+            <a class="menu-href" href="#">
+                <p>Освещение и карниз</p>
+            </a>
+            <a class="menu-href" href="#">
+                <p>Отзывы клиентов</p>
+            </a>
+            <a class="menu-href" href="#">
+                <p>3D визуализация</p>
+            </a>
+            <a class="menu-href" href="#">
+                <p>Пригласить дизайнера</p>
+            </a>
+        </div>
+    </div>
+    <div class="vizitka">
+        <h1>
+            Натяжные потолки
+            <span>В Минске</span>
+        </h1>
+    </div>
     <div style="background-color: aqua;" class="razdel">
-        <input type="button" onclick="next();"/>
+        <input type="button" onclick="next();" />
         test1
     </div>
     <div class="razdel">
-        <input type="button" onclick="next();"/>
+        <input type="button" onclick="next();" />
         test
     </div>
-    <div class="razdel">
+    <div style="background-color: rgb(58, 97, 97);" class="razdel">
         test
-        <input type="button" onclick="next();"/>
+        <input type="button" onclick="next();" />
     </div>
 </body>
 <script>
     function next() {
-        var here = window.pageYOffset+900;
-        window.scrollBy(0,here);
+        var here = window.pageYOffset + 900;
+        window.scrollBy(0, here);
         //alert(document.documentElement.clientHeight);
     }
 </script>
+<script src="script.js"></script>

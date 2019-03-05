@@ -1,8 +1,74 @@
+body {
+    margin: 0 0 0 0;
+}
 .razdel {
-    height: 900px;
+    height: 800px;
     width: 100%;
     background-color: antiquewhite;
     border-radius: 9px;
     border: 1px;
     border-color: black;
+}
+.vizitka {
+    height: 400px;
+    width: 100%;
+    background-image: url('img/vizitka1.jpg');
+    background-size: cover;
+}
+.vizitka h1 {
+    text-align: center;
+    /* color: aqua; */
+    margin: 0 0 0 0;
+    padding: 175px 0 0 0;
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 80px;
+}
+h1 span {
+    display: block;
+    font-size: 48px;
+}
+.menu {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    position: fixed;
+    /* z-index: 999; */
+}
+
+.menu-href {
+    font-size: 16px;
+    display: inline-block;
+    border-bottom: solid #fff 1px;
+    text-align: center;
+    /* margin: 0px 0 0px 0; */
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration: none;
+}
+.menu-href:hover {
+    background-color: rgb(58, 52, 52);
+}
+.menu-href p {
+    color: aliceblue;
+    margin-bottom: 11px;
+}
+.menu_scroll {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+.menu_small {
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+}
+.menu_small:hover {
+    background-color: rgb(112, 111, 111);
+}
+.menu_small div {
+    display: none;
+    
 }
