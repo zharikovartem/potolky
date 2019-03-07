@@ -187,7 +187,7 @@ h1 {
     background-size: 100% 100%;
 }
 .mirrorY {
-    transform: scale(1, -1); 
+    background-image: url('img/arrow2.png');
 }
 .razdel .a {
     
