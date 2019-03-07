@@ -1,60 +1,84 @@
 body {
     margin: 0 0 0 0;
 }
+.p {
+    font-size: 40px;  
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 .razdel {
     height: 800px;
     width: 100%;
-    background-color: antiquewhite;
-    border-radius: 9px;
-    border: 1px;
+    background-color: rgb(80, 79, 79);
     border-color: black;
 }
+.razdel .innerBlock {
+    height: 500px;
+    /* width: 100%; */
+    /* background-color: aliceblue; */
+    padding: 10px 10px 10px 10px;
+    border-top: 70px solid rgb(80, 79, 79);
+    
+}
 .vizitka {
-    height: 400px;
+    max-height: 800px;
     width: 100%;
+    text-align: -webkit-center;
     background-image: url('img/vizitka1.jpg');
     background-size: cover;
+    
 }
-.vizitka h1 {
-    text-align: center;
-    /* color: aqua; */
-    margin: 0 0 0 0;
-    padding: 175px 0 0 0;
-    font-weight: bold;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 80px;
+.vizitka2 {
+    height: 800px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    /* opacity: 1; */
 }
-h1 span {
-    display: block;
-    font-size: 48px;
+h1 {
+    font-size: 90px;
+    color: rgb(251, 252, 253);
+    margin: 0;
+    padding: -300px 0 0 0; 
+    position:relative;
+    top: -420px;
+}
+.vizitka span {
+    font-size: 45px;
+    color: rgb(251, 252, 253);
+    margin: 0;
+    padding: -300px 0 0 0; 
+    position:relative;
+    top: -420px;
 }
 .menu {
     height: 70px;
     width: 100%;
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(43, 42, 42);
     position: fixed;
-    /* z-index: 999; */
+    top: -70px;
+    transition: top 5s cubic-bezier(0, 0, 1, 1);
+    
 }
-
 .menu-href {
     font-size: 16px;
     display: inline-block;
     border-bottom: solid #fff 1px;
     text-align: center;
-    /* margin: 0px 0 0px 0; */
+    margin: 0px 10px;
     font-weight: bold;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     text-decoration: none;
 }
 .menu-href:hover {
-    background-color: rgb(58, 52, 52);
+    background-color: rgb(122, 122, 122);
 }
 .menu-href p {
     color: aliceblue;
     margin-bottom: 11px;
 }
 .menu_scroll {
-    max-width: 1000px;
+    max-width: 80%;
     text-align: center;
     margin: auto;
 }
@@ -63,12 +87,73 @@ h1 span {
     width: 70px;
     position: fixed;
     right: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(224, 222, 222);
 }
 .menu_small:hover {
-    background-color: rgb(112, 111, 111);
+    background-color: rgb(209, 12, 12);
 }
 .menu_small div {
     display: none;
     
 }
+/* первый блок */
+.blockOut {
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 38px;
+    color: aliceblue;
+    position:relative;
+    top: -700px;
+    width: 30%;
+    min-width: 400px;;
+    height: 60px;
+    margin: 0 0 35% 35% ;
+    background: rgb(197, 7, 7);
+    border-radius: 15px;
+    padding-top: 15px;
+}
+.blockOut:hover {
+    background: rgb(138, 5, 5);
+}
+
+.calc {
+    border:10px solid rgb(143, 5, 5);
+    text-align: center;
+    width: 80%;
+    height: auto;
+    background-color: rgb(230, 233, 233);
+    margin: 0 0 10% 10%;
+    display: inline-block;
+}
+.block {
+    width: 33%;
+    min-width: 200px;
+    max-width: 300px;
+    overflow: auto;
+    display: inline-block;
+    margin: 0 0 0 5%;
+    font-size: 16px;  
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.block .label {
+    margin-top: 30px;
+}
+.calc .button {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 38px;
+    color: aliceblue;
+    /* position:relative; */
+    top: 70px;
+    height: 60px;
+    background: rgb(197, 7, 7);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 50px;
+}
+.calc .button:hover {
+    background: rgb(138, 5, 5);
+}
+

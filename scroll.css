@@ -1,0 +1,12 @@
+.calc {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(178, 202, 68);
+    
+}
+.part {
+    width: 27%;
+    height: 100px;
+    background-color: rgb(247, 134, 43);
+    display: inline-block;
+}

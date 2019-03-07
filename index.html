@@ -2,46 +2,103 @@
 
 <head>
     <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="menu" id="menu" hidden>
         <div class="menu_scroll">
-            <a class="menu-href" href="#">
+            <a class="menu-href" href="#" onclick="moveDoc(0); return false;">
                 <p>Рассчитать стоимость</p>
             </a>
-            <a class="menu-href" href="#">
+            <a class="menu-href" href="#" onclick="moveDoc(1); return false;">
                 <p>Примеры работ</p>
             </a>
-            <a class="menu-href" href="#">
+            <a class="menu-href" href="#" onclick="moveDoc(2); return false;">
                 <p>Освещение и карниз</p>
             </a>
-            <a class="menu-href" href="#">
+            <!-- <a class="menu-href" href="#">
                 <p>Отзывы клиентов</p>
-            </a>
-            <a class="menu-href" href="#">
+            </a> -->
+            <a class="menu-href" href="#" onclick="moveDoc(3); return false;">
                 <p>3D визуализация</p>
             </a>
-            <a class="menu-href" href="#">
+            <a class="menu-href" href="#" onclick="moveDoc(4); return false;">
                 <p>Пригласить дизайнера</p>
             </a>
         </div>
     </div>
-    <div class="vizitka">
-        <h1>
-            Натяжные потолки
-            <span>В Минске</span>
-        </h1>
+    <div class="vizitka" id="vizitka">
+        <div class="vizitka2">
+
+        </div>
+        <h1>Натяжные потолки</h1>
+        <span>
+            В Минске
+        </span>
     </div>
-    <div style="background-color: aqua;" class="razdel">
-        <input type="button" onclick="next();" />
-        test1
+
+
+    <div class="razdel" name="primeryRabot">
+        <div class="innerBlock">
+            <div class="calc">
+                <p class="p">Рассчитать стоимость потолка</p>
+                <!-- <label for="metry">Площадь помещения М2</label><input type="tel" name="metry">
+                <label for="svet">Светильники(шт.)</label><input type="tel" name="svet">
+                <input type="tel" name="callName" placeholder="Введите имя"> -->
+                <div class="block">
+                    <div class="label">
+                            <label style="float: left;" for="metry">Площадь помещения (м<sup>2</sup>):</label>
+                            <input style="float: right; width: 35px;" type="tel" name="metry"><br>
+                    </div><br>
+                    <div class="label">
+                            <label style="float: left;" for="metry">Количество углов (шт.):</label>
+                            <input style="float: right; width: 35px;" type="tel" name="metry">
+                    </div><br>
+                </div>
+
+                <div class="block">
+                        <div class="label">
+                                <label style="float: left;" for="metry">Светильники (шт.):</label>
+                                <input style="float: right; width: 35px;" type="tel" name="metry"><br>
+                        </div><br>
+                        <div class="label">
+                                <label style="float: left;" for="metry">Количествово люстр (шт.):</label>
+                                <input style="float: right; width: 35px;" type="tel" name="metry">
+                        </div><br>
+                </div>
+                <div class="block">
+                        <div class="label">
+                                <input type="tel" name="callName" placeholder="Введите имя">
+                        </div><br>
+                        <div class="label">
+                                <input type="tel" name="callName" placeholder="Введите телефон">
+                        </div>
+                </div>
+                <!-- <br><input type="button" value="РАССЧИТАТЬ"><br> -->
+                <br><br><br><a class="button" href="#">РАССЧИТАТЬ</a><br><br>
+            </div>
+        </div>
+        <div class="blockOut" onclick="moveDoc(0); return false;">
+            Рассчитать стоимость
+        </div>
+
     </div>
-    <div class="razdel">
+
+    <!--  -->
+    <div style="background-color: aqua;" class="razdel" name="top2">
         <input type="button" onclick="next();" />
         test
     </div>
     <div style="background-color: rgb(58, 97, 97);" class="razdel">
+        test
+        <input type="button" onclick="next();" />
+    </div>
+    <div style="background-color: rgb(57, 192, 192);" class="razdel">
+        test
+        <input type="button" onclick="next();" />
+    </div>
+    <div style="background-color: rgb(206, 72, 139);" class="razdel">
         test
         <input type="button" onclick="next();" />
     </div>
