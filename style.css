@@ -19,6 +19,7 @@ body {
     background-color: rgb(80, 79, 79);
     border-color: black;
     display: inline-block;
+    text-align: center;
 }
 .razdel .innerBlock {
     height: 500px;
@@ -173,14 +174,32 @@ h1 {
     height: 600px;
     background-color: azure;
     display: inline-block; 
+    background-image: url('img/vizitka1.jpg');
+    background-size: 100% 100%;
+
 }
 .owl {
     height: 50px;
     width: 50px;
-    background-color: rgb(13, 148, 148);
+    /* background-color: rgb(235, 240, 240); */
     display: inline-block; 
+    background-image: url('img/arrow.png');
+    background-size: 100% 100%;
+}
+.mirrorY {
+    transform: scale(1, -1); 
 }
 .razdel .a {
-    width: 12.5%
-    /* margin: 20px; */
+    
+    color: aliceblue;
+    display: inline-block; 
+    margin: 2%;
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+.razdel .a a{
+    color: aliceblue; 
+    text-decoration: none;
+    size: 20px;
 }
