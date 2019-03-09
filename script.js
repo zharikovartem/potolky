@@ -88,3 +88,24 @@ function up(targ) {
      } else clearTimeout(t);
     return false;
 }
+function chengeImage(num) {
+    var allImages = document.getElementsByClassName('image');
+    console.log(allImages);
+    for (var i=0; i < allImages.length; i++) {
+        console.log(allImages[i]);
+        allImages[i].style.display = 'none';
+        console.log(allImages[i].id);
+    }
+    var MAX_IMAGES = 5;
+    var image = document.getElementById('image' + num);
+    image.style.display = '';
+    // num++;
+    // if (num <= MAX_IMAGES) {
+    //     var image = document.getElementById('image' + num);
+    //     image.style.display = '';
+    // } else {
+    //     num = 0;
+    //     var image = document.getElementById('image' + num);
+    //     image.style.display = '';
+    // }
+}

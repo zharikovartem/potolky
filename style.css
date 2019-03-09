@@ -181,7 +181,6 @@ h1 {
 .owl {
     height: 50px;
     width: 50px;
-    /* background-color: rgb(235, 240, 240); */
     display: inline-block; 
     background-image: url('img/arrow.png');
     background-size: 100% 100%;
@@ -202,4 +201,12 @@ h1 {
     color: aliceblue; 
     text-decoration: none;
     size: 20px;
+    top: 100px;
+}
+.owl-dot {
+    display: inline-block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue;
 }
