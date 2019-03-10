@@ -171,7 +171,8 @@ h1 {
 }
 .image {
     width: 70%;
-    height: 600px;
+    height: 300px;
+    /* max-height: 60%; */
     background-color: azure;
     display: inline-block; 
     background-image: url('img/vizitka1.jpg');

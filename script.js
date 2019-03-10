@@ -2,6 +2,7 @@ var startWidth;
 let MAX_WIDTH = 1000;
 let MAX_HEIGHT = 800;
 
+window.onload = chengeType(1);
 window.onload = function () {//определяет стартовую ширину
     var scrolledX = document.documentElement.clientWidth;
     var scrolledY = document.documentElement.clientHeight;
@@ -90,22 +91,36 @@ function up(targ) {
 }
 function chengeImage(num) {
     var allImages = document.getElementsByClassName('image');
-    console.log(allImages);
+    //console.log(allImages);
     for (var i=0; i < allImages.length; i++) {
-        console.log(allImages[i]);
+        //console.log(allImages[i]);
         allImages[i].style.display = 'none';
-        console.log(allImages[i].id);
+        //console.log(allImages[i].style.backgroundImage);
     }
     var MAX_IMAGES = 5;
     var image = document.getElementById('image' + num);
     image.style.display = '';
-    // num++;
-    // if (num <= MAX_IMAGES) {
-    //     var image = document.getElementById('image' + num);
-    //     image.style.display = '';
-    // } else {
-    //     num = 0;
-    //     var image = document.getElementById('image' + num);
-    //     image.style.display = '';
-    // }
+}
+function chengeType(num) {
+    var typeName;
+    if (num == 1) {
+        typeName ='glianec';
+    } if (num == 2) {
+        typeName ='mat';
+    } if (num == 3) {
+        typeName = 'satin';
+    } if (num == 4) {
+        typeName = 'parashie';
+    } if (num == 5) {
+        typeName = 'dvuhi';
+    } if (num == 6) {
+        typeName = 'fotopechat';
+    }
+    var imageUrl = 'url("img/'+typeName+'/primer';
+    var allImages = document.getElementsByClassName('image');
+    for (var i=0; i < allImages.length; i++) {
+        var ii = i+1;;
+        console.log(imageUrl+ii+'.jpg")');
+        allImages[i].style.backgroundImage = imageUrl+ii+'.jpg")';
+    }
 }
